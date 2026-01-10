@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.btn-row-1,.btn-row-2{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    width: 200px;
+    height: 200px;
+    border: 10px solid black;
+    border-radius: 10%;
+    margin: 1.5rem;
+
+}
+.yellow
+{
+    background-color: yellow;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.green
+{
+    background-color: green;
+}
+.flash{
+    background-color: white;
+}
