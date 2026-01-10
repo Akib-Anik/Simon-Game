@@ -12,7 +12,8 @@ function flash(btn) {
         btn.classList.remove("flash")
     }, 250);
 }
-body.addEventListener("keypress", function () {
+body.addEventListener("click", function (event) {
+    event.stopPropagation();
     if (start == false) {
         console.log("game started");
         start = true;
@@ -40,7 +41,9 @@ function checkans(len) {
         reset();
     }
 }
-function btnpress() {
+function btnpress(event) {
+    event.stopPropagation();
+
     let btn = this;
     btn.classList.add("flash");
     setTimeout(function () {
